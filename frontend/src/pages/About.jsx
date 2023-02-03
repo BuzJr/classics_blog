@@ -50,7 +50,7 @@ const Home = () => {
             in a custom built page for writing new posts, as well as easy user tracking and the ability to send update emails to users that register. 
         </p>
         <div className='button_about'>
-        <a href=''>
+        <a href='https://github.com/BuzJr/classics_blog' target="_blank">
         <button>SOURCE CODE</button>
         </a>
         </div>
