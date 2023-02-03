@@ -23,6 +23,7 @@ app.post('/api/upload', upload.single('file'), function (req, res){
     res.status(200).json(file.filename)
 })
 
+const PORT = 8800;
 
 app.use(express.json())
 app.use(cookieParser())
@@ -30,6 +31,6 @@ app.use("/api/auth", authRoutes)
 app.use("/api/users", userRoutes)
 app.use("/api/posts", postRoutes)
 
-app.listen(8800, () => {
-    console.log("Connected!")
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Connected to ${PORT}!`)
 })
