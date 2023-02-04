@@ -23,7 +23,8 @@ app.post('/api/upload', upload.single('file'), function (req, res){
     res.status(200).json(file.filename)
 })
 
-const PORT = 8800;
+const PORT = 3001;
+
 
 app.use(express.json())
 app.use(cookieParser())

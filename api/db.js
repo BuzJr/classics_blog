@@ -6,3 +6,4 @@ export const db = mysql.createConnection({
     password: "BuzzyGok!1",
     database: "blog"
 })
+

@@ -1,7 +1,6 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
   Outlet,
 } from "react-router-dom";
 import Register from "./pages/Register";
@@ -13,7 +12,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { Children } from "react";
 import "./style.scss";
 
 const Layout = () => {
